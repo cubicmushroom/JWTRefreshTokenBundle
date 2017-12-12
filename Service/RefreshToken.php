@@ -28,39 +28,41 @@ class RefreshToken
      * @var RefreshTokenAuthenticator
      */
     private $authenticator;
-    
+
     /**
      * @var RefreshTokenProvider
      */
     private $provider;
-    
+
     /**
      * @var AuthenticationSuccessHandler
      */
     private $successHandler;
-    
+
     /**
      * @var AuthenticationFailureHandler
      */
     private $failureHandler;
-    
+
     /**
      * @var RefreshTokenManagerInterface
      */
     private $refreshTokenManager;
-    
-    /**
-     * @var string
-     */
-    private $providerKey;
-    
+
     /**
      * @var int
      */
     private $ttl;
-    
+
     /**
-     * @var int
+     * @var string
+     */
+    private $providerKey;
+
+    /**
+     * Whether the refresh token valid date time should be updated when refreshing.
+     *
+     * @var bool
      */
     private $ttlUpdate;
 
